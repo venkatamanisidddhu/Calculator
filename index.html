@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Calculater</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <form name="form">
+                <input type="text" class="result" name="result" id="result" readonly>
+                <div class="row">
+                    <input type="button" name="clear" class="btn-opr" onclick="clearResult()" value="AC">
+                    <input type="button" name="+" class="btn-opr" onclick="addOperation('%')" value="%">
+                    <input type="button" name="-" class="btn-opr" onclick="addOperation('/')" value="/">
+                    <input type="button" name="" class="btn-opr" onclick="DeleteN()" value="DEL">
+                </div>
+                <div class="row">
+                    <input type="button" name="1" class="btn" onclick="addNumber('1')" value="1">
+                    <input type="button" name="2" class="btn" onclick="addNumber('2')" value="2">
+                    <input type="button" name="3" class="btn" onclick="addNumber('3')" value="3">
+                    <input type="button" name="/" class="btn-opr" onclick="addOperation('*')" value="*">
+                </div>
+                <div class="row">
+                    <input type="button" name="4" class="btn" onclick="addNumber('4')" value="4">
+                    <input type="button" name="5" class="btn" onclick="addNumber('5')" value="5">
+                    <input type="button" name="6" class="btn" onclick="addNumber('6')" value="6">
+                    <input type="button" name="-" class="btn-opr" onclick="addOperation('-')" value="-">
+                </div>
+                <div class="row">
+                    <input type="button" name="7" class="btn" onclick="addNumber('7')" value="7">
+                    <input type="button" name="8" class="btn" onclick="addNumber('8')" value="8">
+                    <input type="button" name="9" class="btn" onclick="addNumber('9')" value="9">
+                    <input type="button" name="+" class="btn-opr" onclick="addOperation('+')" value="+">
+                </div>
+                <div class="row">
+                    <input type="button" name="7" class="btn" onclick="addNumber('.')" value=".">
+                    <input type="button" name="7" class="btn" onclick="addNumber('0')" value="0">
+                    <input type="button" name="7" class="btn-cal btn-opr" onclick="Calculate()" value="=">
+                </div>
+            </form>
+        </div>
+    </main>
+</body>
+<script src="javascript.js"></script>
+
+</html>
